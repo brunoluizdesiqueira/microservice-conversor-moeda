@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+   db:
+     image: postgres
+     restart: always
+     volumes:
+       - dbdata:/var/lib/postgres
+     ports:
+       - "15432:5432"
+     environment:
+       POSTGRES_PASSWORD: "123456"
+       POSTGRES_USER: postgres
+       POSTGRES_DB: banco
+
+volumes:
+    dbdata:

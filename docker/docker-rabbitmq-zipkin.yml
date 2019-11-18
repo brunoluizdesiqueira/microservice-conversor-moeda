@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 8881:15672
+      - 5671:5671
+      - 5672:5672
+    environment:
+      RABBITMQ_DEFAULT_USER: rabbit666
+      RABBITMQ_DEFAULT_PASS: melhorsenhadomundo
+      
+  # zipkin ui
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - 9411:9411
+    environment:
+      # Point the zipkin at the storage backend
+      - STORAGE_TYPE=mem
+      - RABBIT_HOST=rabbitmq
+    depends_on:
+      - rabbitmq
+    links:
+      - rabbitmq      
