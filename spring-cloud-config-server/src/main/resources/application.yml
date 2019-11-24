@@ -8,4 +8,4 @@ spring:
           uri: https://github.com/brunoluizdesiqueira/conversor-moedas-configs.git
   rabbitmq:
     password: melhorsenhadomundo
-    username: rabbit666
+    username: rabbit666   

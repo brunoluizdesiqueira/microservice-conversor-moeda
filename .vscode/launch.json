@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringCloudConfigServerApplication<spring-cloud-config-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.blsdev.microservices.springcloudconfigserver.SpringCloudConfigServerApplication",
+            "projectName": "spring-cloud-config-server",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-LimitsServiceApplication<limits-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.blsdev.microservices.limitsservice.LimitsServiceApplication",
+            "projectName": "limits-service",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-NetflixEurekaNamingServerApplication<netflix-eureka-naming-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.blsdev.microservices.netflixeurekanamingserver.NetflixEurekaNamingServerApplication",
+            "projectName": "netflix-eureka-naming-server",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-NetflixZuulApiGatewayServerApplication<netflix-zuul-api-gateway-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.blsdev.microservices.netflixzuulapigatewayserver.NetflixZuulApiGatewayServerApplication",
+            "projectName": "netflix-zuul-api-gateway-server",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CurrencyExchangeServiceApplication<currency-exchange-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.blsdev.microservices.currencyexchangeservice.CurrencyExchangeServiceApplication",
+            "projectName": "currency-exchange-service",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CurrencyConversionServiceApplication<currency-conversion-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.blsdev.microservices.currencyconversionservice.CurrencyConversionServiceApplication",
+            "projectName": "currency-conversion-service",
+            "args": ""
+        }
+    ]
+}
