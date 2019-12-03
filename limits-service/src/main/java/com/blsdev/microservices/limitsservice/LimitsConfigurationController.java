@@ -14,6 +14,7 @@ public class LimitsConfigurationController {
 	Configuration configuration;
 	
 	@GetMapping("/limits")
+	@HystrixCommand(fallbackMethod="fallbackRetrieveConfiguration")
 	public LimitsConfiguration retrieveLimitsFromConfigurations() {
 		return new LimitsConfiguration(configuration.getMaximum(), configuration.getMinimum());
 	}

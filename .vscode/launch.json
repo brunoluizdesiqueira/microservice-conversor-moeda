@@ -2,6 +2,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HystrixTurbineApplication",
+            "request": "launch",
+            "mainClass": "com.blsdev.microservices.HystrixTurbineApplication"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DemoApplication",
+            "request": "launch",
+            "mainClass": "com.blsdev.microservices.hystrix.netflixhystrixturbine.DemoApplication"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HystrixTurbineApplication",
+            "request": "launch",
+            "mainClass": "com.blsdev.hystrix.turbine.HystrixTurbineApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-SpringCloudConfigServerApplication<spring-cloud-config-server>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -58,6 +76,16 @@
             "console": "internalConsole",
             "mainClass": "com.blsdev.microservices.currencyconversionservice.CurrencyConversionServiceApplication",
             "projectName": "currency-conversion-service",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-HystrixTurbineApplication<netflix-hystrix-turbine>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.blsdev.microservices.HystrixTurbineApplication",
+            "projectName": "netflix-hystrix-turbine",
             "args": ""
         }
     ]
